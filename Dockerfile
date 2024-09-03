@@ -1,6 +1,6 @@
 FROM debian:bookworm-slim
 
-RUN apt update -y && apt install -y curl jq
+RUN apt-get update -y && apt-get install -y curl jq
 
 WORKDIR /client
 
