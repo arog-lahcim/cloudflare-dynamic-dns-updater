@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM debian:stable-slim
 
 RUN apt-get update -y && apt-get install -y curl jq
 
