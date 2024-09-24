@@ -1,0 +1,11 @@
+services:
+  cloudflare-dynamic-dns-updater:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - API_KEY=
+      - ZONE_ID=
+      - DOMAIN_NAME=your.domain.com
+      - TIMEOUT_SEC=600
+      # - DNS_RECORD_ID= # optional if not provided updater tries to find it automatically at startup
